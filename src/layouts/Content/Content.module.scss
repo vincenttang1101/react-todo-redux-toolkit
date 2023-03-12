@@ -1,0 +1,15 @@
+@import "../_mixins.scss";
+
+.content_wrapper {
+  background-color: var(--black-250);
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 70rem;
+  border-radius: 12px;
+
+  @include smallDeviceSize {
+    max-width: 67rem;
+    width: 95%;
+    padding: 0 0.1rem;
+  }
+}

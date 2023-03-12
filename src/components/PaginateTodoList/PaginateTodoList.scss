@@ -1,0 +1,31 @@
+@import "../../layouts/mixins.scss";
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  gap: 5px;
+  .page-num {
+    padding: 6px 13px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 700;
+    background-color: var(--purple-800);
+    &:hover {
+      background-color: var(--blue-400);
+      color: var(--white);
+    }
+  }
+
+  .active {
+    background-color: var(--blue-400);
+  }
+
+  @include smallDeviceSize {
+    .item {
+      display: none;
+    }
+  }
+}

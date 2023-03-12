@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  height: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  overflow: hidden;
+  &__select {
+    color: var(--black-500);
+    font-family: Poppins;
+    padding: 1rem;
+    border: none;
+    appearance: none;
+    background-position: calc(100% - 12px) center !important;
+    background: url("data:image/svg+xml,<svg height='12px' width='12px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+      no-repeat;
+    background-color: var(--gray-300) !important;
+    width: 150px;
+    cursor: pointer;
+  }
+}
+
+.button--primary {
+  background-color: var(--purple-800);
+  color: var(--black-500);
+
+  &:hover {
+    background: var(--blue-400);
+  }
+}
+.button--secondary {
+  background-color: var(--gray-300);
+  color: var(--black-1);
+
+  &:hover {
+    background: var(--gray-400);
+  }
+}

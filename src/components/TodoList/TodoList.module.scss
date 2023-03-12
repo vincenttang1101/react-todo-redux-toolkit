@@ -1,0 +1,18 @@
+.todoList {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.emptyText {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--gray-300);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--black-300);
+  width: max-content;
+  height: auto;
+}

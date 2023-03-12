@@ -1,0 +1,13 @@
+@import "../../layouts/mixins.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70rem;
+  margin: 0 auto;
+
+  @include smallDeviceSize {
+    display: flex;
+    flex-direction: column;
+  }
+}

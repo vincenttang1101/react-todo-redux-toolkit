@@ -1,0 +1,146 @@
+@import "../../layouts/_mixins.scss";
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--black-300);
+  border: 1px solid var(---black-250);
+  box-shadow: 0 2px 8px var(--black-500);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include smallDeviceSize {
+    display: flex;
+    padding: 1rem;
+    background: var(--black-300);
+    border: 1px solid var(---black-250);
+    box-shadow: 0 2px 8px var(--black-500);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
+.todoDetails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.svgBox {
+  flex-basis: 25px;
+  flex-shrink: 0;
+  height: 25px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 0.5rem;
+}
+.todoText {
+  word-break: break-all;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--gray-300);
+
+  &--completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+}
+.time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: -0.1rem;
+  color: #f2f2f2;
+}
+.todoActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.low {
+  color: var(--gray-200);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 7px;
+  border-radius: 4px;
+  border: 2px solid var(--gray-200);
+  cursor: pointer;
+}
+.medium {
+  color: var(--blue-400);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 7px;
+  border-radius: 4px;
+  border: 2px solid;
+  cursor: pointer;
+}
+.high {
+  color: var(--red-400);
+  border-color: var(--red-400);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 7px;
+  border-radius: 4px;
+  border: 2px solid var(--red-400);
+  cursor: pointer;
+}
+.icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--gray-1);
+  color: var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+  &:hover {
+    background-color: var(--gray-2);
+  }
+}
+
+.iconDeadline {
+  font-size: 1.5rem;
+  margin-top: -0.1rem;
+  cursor: pointer;
+
+  &--early {
+    color: var(--green-700);
+  }
+  &--lastDay {
+    color: var(--yellow-700);
+  }
+  &--end {
+    color: var(--red-400);
+  }
+}

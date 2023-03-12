@@ -1,0 +1,30 @@
+@import "../../layouts/mixins.scss";
+
+.tab_item_button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 12rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--purple-200);
+
+  &_active {
+    @extend .tab_item_button;
+    border-bottom: 5px solid var(--purple-200);
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      -225deg,
+      var(--purple) 0%,
+      var(--purple-900) 48%,
+      var(--blue) 100%
+    );
+    cursor: pointer;
+    width: 12rem;
+
+    @include smallDeviceSize {
+      border-bottom: 5px solid var(--purple-200) !important;
+    }
+  }
+}
