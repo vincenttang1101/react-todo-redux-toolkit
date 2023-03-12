@@ -115,7 +115,7 @@ function TodoModal({ todo, type, modalOpen, setModalOpen }) {
               <MdOutlineClose />
             </motion.div>
             <form className={styles.form} onSubmit={(e) => handleSubmit(e)}>
-              <h1 className={styles.formTitle}>Todo</h1>
+              <h1 className={styles.formTitle}> {type} Task</h1>
               <label htmlFor="title">
                 Title
                 <input
