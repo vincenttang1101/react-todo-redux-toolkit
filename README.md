@@ -54,7 +54,7 @@ Technologies used in the project:
 
 Featured libraries used in the project:
 
-*   Redux-toolkit
+*   redux-toolkit
 *   react-redux
 *   react-date-picker
 *   react-hot-toast
