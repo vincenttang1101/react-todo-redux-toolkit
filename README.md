@@ -57,9 +57,9 @@ Featured libraries used in the project:
 *   redux-toolkit
 *   react-redux
 *   react-date-picker
+*   react-paginate
 *   react-hot-toast
 *   react-icons
-*   react-date-picker
 *   react-tsparticles
 *   framer-motion
 *   moment
