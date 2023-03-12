@@ -13,7 +13,7 @@
   @include smallDeviceSize {
     width: 95%;
     margin: 0.5rem auto;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .title {
@@ -28,7 +28,7 @@
     padding: 0 1rem;
 
     @include smallDeviceSize {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   }
 }

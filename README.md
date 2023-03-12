@@ -12,10 +12,10 @@ The simple todo app is built with these key components::</p>
 
 <h2>Project Screenshots:</h2>
 <h3>Desktop:</h3>
-<img src="https://i.ibb.co/2Y6YF39/banner-desktop.png" width="500" height ="500" alt="project-screenshot">
+<img src="https://i.ibb.co/SrPtbwj/banner-desktop.png" width="500" height ="500" alt="project-screenshot">
 
 <h3>Mobile:</h3>
-<img src="https://i.ibb.co/MDv7NXB/banner-mobile.png" width="250" height="700" alt="project-screenshot">
+<img src="https://i.ibb.co/khdVQ9s/banner-mobile.png" width="250" height="700" alt="project-screenshot">
 </div>
 
   
