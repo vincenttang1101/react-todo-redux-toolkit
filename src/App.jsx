@@ -2,6 +2,7 @@ import Content from "./layouts/Content/Content";
 import Header from "./layouts/Header/Header";
 import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
 import Footer from "./layouts/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
         <Content />
         <Footer />
       </div>
+      <Toaster
+        position="bottom-right"
+        toastOptions={{ style: { fontSize: "1.4rem" } }}
+      />
     </>
   );
 }
