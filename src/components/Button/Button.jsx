@@ -10,6 +10,7 @@ const buttonTypes = {
 function Button({ children, type, variant, ...rest }) {
   return (
     <button
+      type={type === "submit" ? "submit" : "button"}
       className={getClasses([
         styles.button,
         styles[`button--${buttonTypes[variant]}`],
