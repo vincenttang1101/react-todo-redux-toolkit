@@ -65,7 +65,7 @@ function TodoModal({ todo, type, modalOpen, setModalOpen }) {
       }
       setModalOpen(false);
     } else {
-      toast.error("Please enter title !");
+      toast.error("Please enter a title !");
     }
   };
 
@@ -85,7 +85,7 @@ function TodoModal({ todo, type, modalOpen, setModalOpen }) {
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
-  }, []);
+  });
 
   return (
     <AnimatePresence>
