@@ -47,13 +47,9 @@ npm start
   
 <h2>💻 Built with</h2>
 
-Technologies used in the project:
+Technologies/libraries used in the project:
 
 *   ReactJS
-
-
-Featured libraries used in the project:
-
 *   redux-toolkit
 *   react-redux
 *   react-date-picker
