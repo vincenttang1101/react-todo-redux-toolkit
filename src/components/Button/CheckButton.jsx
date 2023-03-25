@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../TodoItem/TodoItem.module.scss";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 

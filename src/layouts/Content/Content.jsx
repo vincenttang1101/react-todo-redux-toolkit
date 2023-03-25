@@ -1,4 +1,3 @@
-import React from "react";
 import PaginateTodoList from "../../components/PaginateTodoList/PaginateTodoList";
 import styles from "./Content.module.scss";
 

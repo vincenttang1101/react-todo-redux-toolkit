@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdDelete, MdEdit } from "react-icons/md";
 import { RiRadioButtonLine } from "react-icons/ri";
 import { useDispatch } from "react-redux";

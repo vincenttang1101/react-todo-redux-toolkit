@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Header.module.scss";
 import AddTodo from "../../components/AddTodo/AddTodo";
 import FilterPriority from "../../components/FilterPriority/FilterPriority";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./StatusTab.module.scss";
 import { updateFilterStatus } from "../TodoItem/TodoSlice";

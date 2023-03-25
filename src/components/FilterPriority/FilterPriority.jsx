@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SelectButton } from "../../components/Button/Button";
 import { updateFilterPriority } from "../../components/TodoItem/TodoSlice";

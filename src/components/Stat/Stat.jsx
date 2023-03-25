@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Stat.module.scss";
 import CountStat from "../../utils/CountStat";
 import { useSelector } from "react-redux";

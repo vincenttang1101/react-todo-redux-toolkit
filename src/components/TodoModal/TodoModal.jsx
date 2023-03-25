@@ -1,7 +1,7 @@
 import styles from "./TodoModal.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { MdOutlineClose } from "react-icons/md";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import DatePicker from "react-date-picker";
 import moment from "moment";
 import { Button } from "../Button/Button";
