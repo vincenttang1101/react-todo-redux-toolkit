@@ -18,17 +18,16 @@ The simple todo app is built with these key components::</p>
 <img src="https://i.ibb.co/2cGH0T5/banner-mobile.png" width="250" height="800" alt="project-screenshot">
 </div>
 
-  
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
 
-*   Building CRUD based on Redux Toolkit
-*   Using React Hook and some other libraries featured
+- Building CRUD based on Redux Toolkit
+- Using React Hook and some other libraries featured
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Download Project</p>
+<p>1. Clone git or Download project </p>
 
 <p>2. You need to go to the file directory and run to download the library</p>
 
@@ -42,28 +41,19 @@ npm install
 npm start
 ```
 
-
-  
-  
 <h2>💻 Built with</h2>
 
 Technologies/libraries used in the project:
 
-*   ReactJS
-*   redux-toolkit
-*   react-redux
-*   react-date-picker
-*   react-paginate
-*   react-hot-toast
-*   react-icons
-*   react-tsparticles
-*   framer-motion
-*   moment
-*   sass
-*   uuid
-
-
-<h2>💖 Contact me:</h2>
-
-Facebook: https://www.facebook.com/tangtrinhquang.dev/
-
+- ReactJS
+- redux-toolkit
+- react-redux
+- react-date-picker
+- react-paginate
+- react-hot-toast
+- react-icons
+- react-tsparticles
+- framer-motion
+- moment
+- sass
+- uuid
