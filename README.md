@@ -1,6 +1,6 @@
 <h1 align="center" id="title">✨ 🎉 🎉React Todo App 🎉 🎉 ✨</h1>
 
-<p align="center"><img src="https://socialify.git.ci/tangtrinhquang/react-todo-app/image?description=1&amp;font=Inter&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Light" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/vincenttang1101/react-todo-redux_toolkit/image?font=Inter&language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Light" alt="project-image"></p>
 
 <p id="description">
 The simple todo app is built with these key components::</p>
