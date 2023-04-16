@@ -1,10 +1,10 @@
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useSelector } from "react-redux";
-import TodoList from "../TodoList/TodoList";
-import "./PaginateTodoList.scss";
+import { TodoList } from "../TodoList/TodoList";
+import "./PaginateTodo.scss";
 
-function PaginateTodo() {
+export const PaginateTodo = () => {
   const todoList = useSelector((state) => state.todo.todoList);
   const todos = [...todoList];
   const itemsPerPage = 4;
@@ -39,6 +39,4 @@ function PaginateTodo() {
       />
     </>
   );
-}
-
-export default PaginateTodo;
+};

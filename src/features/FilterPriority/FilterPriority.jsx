@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { SelectButton } from "../../components/Button/Button";
-import { updateFilterPriority } from "../../components/TodoItem/TodoSlice";
+import { SelectButton } from "../../components";
+import { updateFilterPriority } from "../../features/TodoItem/TodoSlice";
 
-function FilterPriority() {
+export const FilterPriority = () => {
   const initialFilterPriority = useSelector(
     (state) => state.todo.filterPriority
   );
@@ -28,6 +28,4 @@ function FilterPriority() {
       <option value="High">High</option>
     </SelectButton>
   );
-}
-
-export default FilterPriority;
+};

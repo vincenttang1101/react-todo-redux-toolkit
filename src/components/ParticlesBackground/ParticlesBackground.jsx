@@ -3,7 +3,7 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import data from "./particles.json";
 
-function ParticlesBackground() {
+export const ParticlesBackground = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -16,6 +16,4 @@ function ParticlesBackground() {
       options={data}
     />
   );
-}
-
-export default ParticlesBackground;
+};

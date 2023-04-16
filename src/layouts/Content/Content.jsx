@@ -1,12 +1,10 @@
-import PaginateTodoList from "../../components/PaginateTodoList/PaginateTodoList";
+import { PaginateTodo } from "../../features";
 import styles from "./Content.module.scss";
 
-function Content() {
+export const Content = () => {
   return (
     <div className={styles.content_wrapper}>
-      <PaginateTodoList />
+      <PaginateTodo />
     </div>
   );
-}
-
-export default Content;
+};

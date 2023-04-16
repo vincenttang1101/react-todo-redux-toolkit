@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import styles from "./StatusTab.module.scss";
 import { updateFilterStatus } from "../TodoItem/TodoSlice";
 
-function StatusTab() {
+export const StatusTab = () => {
   const [isActiveAll, setIsActiveAll] = useState(false);
   const [isActivePending, setIsActivePending] = useState(false);
   const [isActiveCompleted, setIsActiveCompleted] = useState(false);
@@ -67,6 +67,4 @@ function StatusTab() {
       </button>
     </>
   );
-}
-
-export default StatusTab;
+};

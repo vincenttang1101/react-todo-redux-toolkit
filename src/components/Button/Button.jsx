@@ -6,7 +6,7 @@ const buttonTypes = {
   secondary: "secondary",
 };
 
-function Button({ children, type, variant, ...rest }) {
+export const Button = ({ children, type, variant, ...rest }) => {
   return (
     <button
       type={type === "submit" ? "submit" : "button"}
@@ -19,9 +19,9 @@ function Button({ children, type, variant, ...rest }) {
       {children}
     </button>
   );
-}
+};
 
-function SelectButton({ children, ...rest }) {
+export const SelectButton = ({ children, ...rest }) => {
   return (
     <select
       className={getClasses([styles.button, styles.button__select])}
@@ -30,6 +30,4 @@ function SelectButton({ children, ...rest }) {
       {children}
     </select>
   );
-}
-
-export { Button, SelectButton };
+};

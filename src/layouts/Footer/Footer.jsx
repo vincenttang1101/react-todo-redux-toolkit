@@ -1,12 +1,10 @@
 import styles from "./Footer.module.scss";
-import Stat from "../../components/Stat/Stat";
+import { Stat } from "../../features";
 
-function Footer() {
+export const Footer = () => {
   return (
     <div className={styles.footer}>
       <Stat />
     </div>
   );
-}
-
-export default Footer;
+};

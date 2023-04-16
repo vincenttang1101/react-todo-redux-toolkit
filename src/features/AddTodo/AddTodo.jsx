@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Button } from "../Button/Button";
-import TodoModal from "../TodoModal/TodoModal";
+import { Button, TodoModal } from "../../components";
 
-function AddTodo() {
+export const AddTodo = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -17,6 +16,4 @@ function AddTodo() {
       <TodoModal type="Add" modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </>
   );
-}
-
-export default AddTodo;
+};

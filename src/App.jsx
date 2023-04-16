@@ -1,7 +1,5 @@
-import Content from "./layouts/Content/Content";
-import Header from "./layouts/Header/Header";
-import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
-import Footer from "./layouts/Footer/Footer";
+import { Header, Content, Footer } from "./layouts";
+import { ParticlesBackground } from "./components";
 import { Toaster } from "react-hot-toast";
 
 function App() {

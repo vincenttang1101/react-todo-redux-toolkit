@@ -4,14 +4,13 @@ import { MdOutlineClose } from "react-icons/md";
 import { useEffect, useState } from "react";
 import DatePicker from "react-date-picker";
 import moment from "moment";
-import { Button } from "../Button/Button";
+import { Button, dropIn } from "../../components";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { v4 as uuid } from "uuid";
-import { addTodo, updateTodo } from "../TodoItem/TodoSlice";
-import { dropIn } from "../Motion/Motion";
+import { addTodo, updateTodo } from "../../features/TodoItem/TodoSlice";
 
-function TodoModal({ todo, type, modalOpen, setModalOpen }) {
+export const TodoModal = ({ todo, type, modalOpen, setModalOpen }) => {
   moment.suppressDeprecationWarnings = true;
 
   const [title, setTitle] = useState(null);
@@ -170,6 +169,4 @@ function TodoModal({ todo, type, modalOpen, setModalOpen }) {
       )}
     </AnimatePresence>
   );
-}
-
-export default TodoModal;
+};

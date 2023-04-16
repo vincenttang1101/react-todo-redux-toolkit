@@ -1,9 +1,7 @@
 import styles from "./Header.module.scss";
-import AddTodo from "../../components/AddTodo/AddTodo";
-import FilterPriority from "../../components/FilterPriority/FilterPriority";
-import StatusTab from "../../components/StatusTab/StatusTab";
+import { AddTodo, FilterPriority, StatusTab } from "../../features";
 
-function Header() {
+export const Header = () => {
   return (
     <>
       <div className={styles.relative}>
@@ -21,6 +19,4 @@ function Header() {
       </div>
     </>
   );
-}
-
-export default Header;
+};

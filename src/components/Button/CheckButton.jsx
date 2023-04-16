@@ -1,4 +1,4 @@
-import styles from "../TodoItem/TodoItem.module.scss";
+import styles from "./Button.module.scss";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const checkVariants = {
@@ -26,7 +26,7 @@ const boxVariant = {
   },
 };
 
-function CheckButton({ checked, handleCheck }) {
+export const CheckButton = ({ checked, handleCheck }) => {
   const pathLength = useMotionValue(0);
   const opacity = useTransform(pathLength, [0.05, 0.15], [0, 1]);
   return (
@@ -56,6 +56,4 @@ function CheckButton({ checked, handleCheck }) {
       </motion.svg>
     </motion.div>
   );
-}
-
-export default CheckButton;
+};

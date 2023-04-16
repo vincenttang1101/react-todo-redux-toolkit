@@ -2,7 +2,7 @@ import styles from "./Stat.module.scss";
 import CountStat from "../../utils/CountStat";
 import { useSelector } from "react-redux";
 
-function Stat() {
+export const Stat = () => {
   const todoList = useSelector((state) => state.todo.todoList);
 
   const pendingList = todoList.filter((item) => item.status === "Pending");
@@ -52,6 +52,4 @@ function Stat() {
       </div>
     </>
   );
-}
-
-export default Stat;
+};

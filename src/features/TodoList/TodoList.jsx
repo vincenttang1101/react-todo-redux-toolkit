@@ -1,10 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import TodoItem from "../TodoItem/TodoItem";
+import { TodoItem } from "./TodoItem/TodoItem";
 import styles from "./TodoList.module.scss";
-import { container, child } from "../Motion/Motion";
+import { container, child } from "../../components";
 
-function TodoList({ todos }) {
+export const TodoList = ({ todos }) => {
   const filterStatus = useSelector((state) => state.todo.filterStatus);
   const filterPriority = useSelector((state) => state.todo.filterPriority);
 
@@ -47,6 +47,4 @@ function TodoList({ todos }) {
       </AnimatePresence>
     </motion.div>
   );
-}
-
-export default TodoList;
+};

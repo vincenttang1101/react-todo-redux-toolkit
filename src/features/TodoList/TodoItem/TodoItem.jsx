@@ -6,13 +6,11 @@ import { RiRadioButtonLine } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { deleteTodo, updateTodo } from "./TodoSlice";
 import styles from "./TodoItem.module.scss";
-import { getClasses } from "../../utils/getClasses";
-import CheckButton from "../Button/CheckButton";
-import TodoModal from "../TodoModal/TodoModal";
+import { getClasses } from "../../../utils/getClasses";
 import moment from "moment";
-import { child } from "../Motion/Motion";
+import { CheckButton, TodoModal, child } from "../../../components";
 
-function TodoItem({ todo }) {
+export const TodoItem = ({ todo }) => {
   moment.suppressDeprecationWarnings = true;
 
   const [checked, setChecked] = useState(false);
@@ -127,6 +125,4 @@ function TodoItem({ todo }) {
       />
     </>
   );
-}
-
-export default TodoItem;
+};
