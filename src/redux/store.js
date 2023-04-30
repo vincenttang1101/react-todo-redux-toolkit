@@ -1,5 +1,5 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import todoReducer from "../features/TodoItem/TodoSlice";
+import todoReducer from "../features/TodoList/TodoItem/TodoSlice";
 
 const store = configureStore({
   reducer: {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./StatusTab.module.scss";
-import { updateFilterStatus } from "../TodoItem/TodoSlice";
+import { updateFilterStatus } from "../TodoList/TodoItem/TodoSlice";
 
 export const StatusTab = () => {
   const [isActiveAll, setIsActiveAll] = useState(false);

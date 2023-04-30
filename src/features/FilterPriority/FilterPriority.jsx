@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SelectButton } from "../../components";
-import { updateFilterPriority } from "../../features/TodoItem/TodoSlice";
+import { updateFilterPriority } from "../../features/TodoList/TodoItem/TodoSlice";
 
 export const FilterPriority = () => {
   const initialFilterPriority = useSelector(

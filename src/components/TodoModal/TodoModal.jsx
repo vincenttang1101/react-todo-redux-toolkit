@@ -8,7 +8,10 @@ import { Button, dropIn } from "../../components";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { v4 as uuid } from "uuid";
-import { addTodo, updateTodo } from "../../features/TodoItem/TodoSlice";
+import {
+  addTodo,
+  updateTodo,
+} from "../../features/TodoList/TodoItem/TodoSlice";
 
 export const TodoModal = ({ todo, type, modalOpen, setModalOpen }) => {
   moment.suppressDeprecationWarnings = true;
